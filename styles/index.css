@@ -98,15 +98,6 @@ li {
     transform: translateY(-8px) rotate(-45deg);
 }
 
-.nav_list > li:hover ul {
-    display: none;
-    position: absolute;
-    text-align: left;
-    max-width: fit-content;
-    padding: 20px;
-    background-color: #141414e5;
-}
-
 /* ====== NAVIGATION END ====== */
 
 /* ====== HERO ====== */
