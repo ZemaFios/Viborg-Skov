@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cantora+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import 'mediaqueries.css';
 
 * {
     margin: 0;
@@ -9,6 +10,7 @@
 html {
     font-family: 'Poppins', sans-serif;
     font-size: 0.625rem;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -33,8 +35,10 @@ a {
 /* ====== NAVIGATION ====== */
 header {
     width: 100%;
-    height: 10vh;
+    height: 70px;
     background-color: #3A5A40;
+    position: fixed;
+    z-index: 1;
 }
 
 .logo {
@@ -135,3 +139,44 @@ li {
 }
 
 /* ====== HERO END ====== */
+
+/* ====== BARK, BROEN & TRÆSTUB ====== */
+.bark,
+.broen,
+.traestub {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.bark_content,
+.broen_content,
+.traestub_content {
+    background-color: white;
+}
+
+.bark h2,
+.broen h2,
+.traestub h2 {
+    font-size: 4rem;
+    margin-left: 20px;
+}
+
+.bark p,
+.broen p,
+.traestub p {
+    font-size: 2rem;
+    margin: 20px
+}
+
+.bark img,
+.broen img,
+.traestub img {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+/* ====== BARK, BROEN & TRÆSTUB END ====== */
