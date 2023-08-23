@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Cantora+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import 'mediaqueries.css';
 
 * {
     margin: 0;
@@ -189,3 +188,72 @@ footer > p {
 }
 
 /* ====== FOOTER END ====== */
+
+@media (min-width: 900px) {
+    header {
+        width: 100%;
+    }
+
+    .nav_list {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-top: 20px;
+        gap: 50px;
+        background: none;
+    }
+
+    li {
+        font-size: 1.5em;
+        font-weight: 600;
+    }
+
+    li a:hover {
+        color: #A3B18A;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 10rem;
+    }
+
+    .hero img {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .bark,
+    .broen,
+    .traestub {
+        height: 100vh;
+    }
+
+    .bark_content,
+    .broen_content,
+    .traestub_content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section_text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .bark h2,
+    .broen h2,
+    .traestub h2 {
+        font-size: 6rem;
+        line-height: 50px;
+    }
+
+    .bark p,
+    .broen p,
+    .traestub p {
+        font-size: 2.3rem;
+    }
+}
