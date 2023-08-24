@@ -222,7 +222,7 @@ footer > p {
 
     .hero img {
         width: 100%;
-        height: 100vh;
+        height: 100%;
     }
 
     .bark,
@@ -232,10 +232,30 @@ footer > p {
     }
 
     .bark_content,
-    .broen_content,
     .traestub_content {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .bark img,
+    .broen img,
+    .traestub img {
+        padding: 20px;
+    }
+
+    .broen_content {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+
+    .broen .section_text {
+        grid-area: 1 / 1 / 3 / 3;
+    }
+
+    .broen_content > img {
+        grid-area: 1 / 3 / 3 / 5;
     }
 
     .section_text {
