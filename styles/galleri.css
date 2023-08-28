@@ -22,7 +22,6 @@ a {
     color: white;
 }
 
-/* ====== GALLERY ====== */
 .image_grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -37,29 +36,28 @@ img {
     margin-top: 75px;
 }
 
-/* ====== FOOTER ====== */
 footer {
     width: 100%;
     height: 20vh;
     background-color: #373737;
-    margin-top: 100px;
+    margin-top: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-footer>p {
+footer > p {
     color: white;
     font-size: 2.5rem;
 }
 
-/* ====== FOOTER END ====== */
-
 @media (min-width: 900px) {
     .image_grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         max-width: 1600px;
         margin: 0 auto;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
     .modal_target {
@@ -150,5 +148,14 @@ footer>p {
         color: #bbb;
         text-decoration: none;
         cursor: pointer;
+    }
+}
+
+@media (min-width: 1200px) {
+    .image_grid {
+        grid-template-columns: repeat(3, 1fr);
+        margin: 0 auto;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
